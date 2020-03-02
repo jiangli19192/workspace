@@ -1,0 +1,23 @@
+package com.zjl.study.object;
+
+public class EqualsTest {
+	private String id;
+	
+	String getId() {
+		return id;
+	}
+
+	void setId(String id) {
+		this.id = id;
+	}
+	
+	public static void main(String[] args) {
+		EqualsTest test1 = new EqualsTest();
+		EqualsTest test2 = new EqualsTest();
+		
+		System.out.println(test1.equals(test2));
+		
+		EqualsTest test3 = test1;
+		System.out.println(test3.equals(test1));
+	}
+}

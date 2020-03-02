@@ -1,0 +1,4 @@
+1473907952505	Extract method 'getCustomStyle'
+1473909224637	Rename local variable 'row'
+1473909254154	Rename local variable 'cell'
+1473909432767	Extract method 'outputExcelFile'

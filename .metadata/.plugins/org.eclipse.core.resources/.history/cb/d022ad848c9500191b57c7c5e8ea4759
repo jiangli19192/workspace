@@ -1,0 +1,19 @@
+package com.zjl.study.object;
+
+public class EqualsTest {
+	
+	
+	class Test {
+		private String id;
+		
+		String getId() {
+			return id;
+		}
+
+		void setId(String id) {
+			this.id = id;
+		}
+		
+		
+	}
+}

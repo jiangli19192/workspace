@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.zjl.study.reference.Main&apos; to &apos;SoftReferenceSample&apos;&#x0D;&#x0A;- Original project: &apos;javaBaseStudy&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.study.reference.Main&apos;&#x0D;&#x0A;- Renamed element: &apos;com.zjl.study.reference.SoftReferenceSample&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.zjl.study.reference{Main.java[Main" matchStrategy="1" name="SoftReferenceSample" qualified="false" references="true" similarDeclarations="false" stamp="1533092100976" textual="false" version="1.0"/>
+</session>

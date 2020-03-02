@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE flow PUBLIC "-//SPRING//DTD WEBFLOW 1.0//EN" 
+	"http://www.springframework.org/dtd/spring-webflow-1.0.dtd">
+
+<flow start-state="enterPurchaseInformation">
+	<!-- 当开始执行这个流时，进入enterPurchaseInformation状态。
+	       进入状态后，先执行formAction上的setupForm()方法，
+		然后选择purchaseForm视图以展示给用户，
+		并暂停流执行直到通知了一个用户事件。
+	 -->
+	<view-state id="enterPurchaseInformation" view="purchaseForm">
+		<entry-actions>
+			<action bean="formAction" method="setupForm"></action>
+		</entry-actions>
+	
+		<!-- 
+			提交过渡说明，当submit事件发生时，
+			若formAction上的bindAndValidate()方法成功执行，		
+			将过渡到requiresShipping状态; 
+			在cancel事件发生时，过渡到cancel状态。
+		 -->
+		<transition on="submit" to="requiresShipping">
+			<action bean="formAction" method="bindAndValidate"></action>
+		</transition>
+		<transition on="cancel" to="cancel"></transition>
+	</view-state>
+	
+	<decision-state id="requiresShipping">
+		<if test="${flowScope.purchase.shopping}" then="enterShippingDetails" else="placeOrder"/>
+	</decision-state>
+	
+	<view-state id="enterShippingDetails" view="shoppingForm">
+		<transition on="submit" to="placeOrder">
+			<action bean="sellItemAction" method="bindAndValidate"></action>
+		</transition>
+	</view-state>
+	
+	<action-state id="placeOrder">
+		<action bean="orderClerk" method="placeOrder(${flowScope.purchase})"></action>
+		<transition on="success" to="showCostConfirmation"></transition>
+	</action-state>
+	
+	<end-state id="showCostConfirmation" view="costConfirmation"></end-state>
+	<end-state id="cancel" view="home"></end-state>
+	
+	<import resource="purchase-flow-context.xml"/>
+</flow>

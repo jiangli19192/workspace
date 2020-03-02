@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void test1()&apos; from &apos;com.zjl.java8.study.iteration.FlatMapTest.main()&apos; to &apos;com.zjl.java8.study.iteration.FlatMapTest&apos;&#x0D;&#x0A;- Original project: &apos;java8Study&apos;&#x0D;&#x0A;- Method name: &apos;test1&apos;&#x0D;&#x0A;- Destination type: &apos;com.zjl.java8.study.iteration.FlatMapTest&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;test1&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.zjl.java8.study.iteration{FlatMapTest.java" name="test1" replace="false" selection="414 504" stamp="1492657479422" version="1.0" visibility="2"/>
+</session>

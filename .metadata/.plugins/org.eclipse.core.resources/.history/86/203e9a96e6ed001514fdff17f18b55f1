@@ -1,0 +1,28 @@
+package com.zjl.swing.swingStudy.notHelloWorld;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+
+/**
+ * 
+ * @author 张江立
+ *
+ */
+public class NotHelloWorld {
+	
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			
+			@Override
+			public void run() {
+				JFrame frame = null;
+				
+			}
+		});
+	}
+}
+
+class NotHelloWorldFrame extends JFrame {
+	
+}

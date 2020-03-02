@@ -1,0 +1,12 @@
+package com.zjl.study.list;
+
+import java.util.List;
+
+import com.zjl.study.list.entity.Human;
+
+public class SortTest {
+	public static void main(String[] args) {
+		List<Human> list = Human.getAInitHumanList();
+		
+	}
+}

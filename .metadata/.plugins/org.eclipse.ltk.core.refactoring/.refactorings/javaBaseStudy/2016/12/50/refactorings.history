@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;javaBaseStudy/src/com/zjl/study/csv/CategoryReferences_20161209151332.csv&apos; to &apos;CategoryReferences_2.csv&apos;" description="Rename resource &apos;CategoryReferences_20161209151332.csv&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/zjl/study/csv/CategoryReferences_20161209151332.csv" name="CategoryReferences_2.csv" stamp="1481279253031" updateReferences="true"/>
+</session>

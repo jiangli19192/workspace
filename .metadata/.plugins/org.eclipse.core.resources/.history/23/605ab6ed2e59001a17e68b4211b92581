@@ -1,0 +1,18 @@
+package com.zjl.study.forTest;
+
+import java.util.List;
+
+public class ForEach {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	private static void forEachTest() {
+		List<String> list = null;
+		
+		for (String str : list) {
+			System.out.println(str);
+		}
+	}
+}

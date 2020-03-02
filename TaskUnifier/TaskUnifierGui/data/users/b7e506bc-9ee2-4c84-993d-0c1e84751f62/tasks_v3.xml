@@ -1,0 +1,35 @@
+<tasks>
+  <task>
+    <modelid>3fc291be-26ac-4921-b6cc-ca15f11f8434</modelid>
+    <modelreferenceids class="java.util.Collections$UnmodifiableMap"/>
+    <modelstatus>TO_UPDATE</modelstatus>
+    <modelcreationdate>1457431831579</modelcreationdate>
+    <modelupdatedate>1457431831580</modelupdatedate>
+    <title>新建</title>
+    <order>0</order>
+    <properties/>
+    <tags></tags>
+    <contexts/>
+    <goals/>
+    <locations/>
+    <progress>0.0</progress>
+    <completed>false</completed>
+    <startdatereminder>0</startdatereminder>
+    <reminder>0</reminder>
+    <repeatfrom>DUE_DATE</repeatfrom>
+    <length>0</length>
+    <timer startdate="">0</timer>
+    <priority>LOW</priority>
+    <star>false</star>
+    <contacts>
+      <contactlist/>
+    </contacts>
+    <tasks>
+      <tasklist/>
+    </tasks>
+    <files>
+      <filelist/>
+    </files>
+    <showchildren>true</showchildren>
+  </task>
+</tasks>

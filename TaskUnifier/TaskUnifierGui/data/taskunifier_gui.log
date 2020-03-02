@@ -1,0 +1,70 @@
+2016-3-8 18:07:40 com.leclercb.taskunifier.gui.utils.UserUtils createNewUser
+信息: User "Default" created
+2016-3-8 18:09:23 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving contacts: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:23 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving contexts: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:23 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving folders: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:23 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving goals: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving locations: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving task statuses: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving notes: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving tasks: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveTaskRules
+信息: Saving task rules: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveTaskTemplates
+信息: Saving task templates: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveTaskSearchers
+信息: Saving task searchers: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveNoteSearchers
+信息: Saving note searchers: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62\backup\20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.utils.BackupUtils createNewBackup
+信息: Backup created: 20160308_180923
+2016-3-8 18:09:24 com.leclercb.taskunifier.gui.main.frames.FrameUtils registerGlobalHotKey
+信息: Global hot key registered
+2016-3-8 18:09:25 com.leclercb.taskunifier.gui.threads.communicator.CommunicatorThread run
+信息: Communicator initialized on port 4576
+2016-3-8 18:09:26 com.leclercb.taskunifier.gui.threads.checkversion.CheckVersionRunnable run
+信息: No new version available
+2016-3-8 18:09:28 com.leclercb.taskunifier.gui.threads.checkpluginversion.CheckPluginVersionRunnable showNoNewVersion
+信息: No new plugin "No Synchronization Plugin" version available
+2016-3-8 18:11:24 com.leclercb.taskunifier.gui.threads.communicator.CommunicatorThread interrupt
+信息: Communicator closed on port 4576
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving contacts: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving contexts: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving folders: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving goals: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving locations: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving task statuses: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving notes: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveModels
+信息: Saving tasks: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveTaskRules
+信息: Saving task rules: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveTaskTemplates
+信息: Saving task templates: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveTaskSearchers
+信息: Saving task searchers: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveNoteSearchers
+信息: Saving note searchers: data\users\b7e506bc-9ee2-4c84-993d-0c1e84751f62
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveInitSettings
+信息: Saving init settings
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveSettings
+信息: Saving settings
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.main.MainSaveFiles saveUserSettings
+信息: Saving user settings
+2016-3-8 18:11:25 com.leclercb.taskunifier.gui.main.Main quit
+信息: Exiting TaskUnifier

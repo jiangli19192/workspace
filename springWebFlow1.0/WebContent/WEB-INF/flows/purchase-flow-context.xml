@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="formAction" class="org.springframework.webflow.action.FormAction">
+		<property name="formObjectName" value="purchase"></property>
+		<property name="formObjectClass" value="com.zjl.study.flow.order.domain.Purchase"></property>
+		<property name="formObjectScope" value="FLOW"></property>
+		<property name="validator">
+			<bean class="com.zjl.study.flow.order.domain.PurchaseValidator"></bean>
+		</property>
+	</bean>
+</beans>

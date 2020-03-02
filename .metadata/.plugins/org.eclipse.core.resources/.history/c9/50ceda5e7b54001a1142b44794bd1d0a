@@ -1,0 +1,15 @@
+package com.zjl.study.map;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class MapSetKey {
+
+	public static void main(String[] args) {
+		Map<String, String> maps = new LinkedHashMap<String, String>();
+		maps.put("1", "张三");
+		maps.put("2", "李四");
+		maps.put("3", "王五");
+		maps.put("4", "赵六");
+	}
+}

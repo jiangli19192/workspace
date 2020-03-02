@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;num&apos; in &apos;com.zjl.study.variables.DoubleConvertToPercent.main(...)&apos; to &apos;numberFormat&apos;&#x0D;&#x0A;- Original project: &apos;javaBaseStudy&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.study.variables.DoubleConvertToPercent.main(String[]).num&apos;&#x0D;&#x0A;- Renamed element: &apos;num&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;num&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.zjl.study.variables{DoubleConvertToPercent.java[DoubleConvertToPercent~main~\[QString;@num!540!592!553!555!QNumberFormat;!0!false" name="numberFormat" references="true" stamp="1572415672967" version="1.0"/>
+</session>

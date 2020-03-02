@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+	
+<bean id="flowRegistry" class="org.springframework.webflow.registry.XmlFlowRegistryFactoryBean">
+	<property name="flowLocations">
+		<list>
+<!-- 			<value>/WEB-INF/flows/purchase-flow.xml</value> -->
+			<value>purchase-flow.xml</value>
+		</list>
+	</property>
+</bean>

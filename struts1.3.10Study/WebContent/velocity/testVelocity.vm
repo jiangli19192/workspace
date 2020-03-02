@@ -1,0 +1,117 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+$velocityForm.name,我啊king！<br/>
+
+年龄：${velocityForm.age}<br/>
+
+##单行注释
+
+#*
+	多行注释
+*#
+
+#**
+	文档格式
+赋值的左边必须是一个变量或者是属性引用。右边可以是下面六种类型之一：
+变量引用,字面字符串,属性引用,方法引用,字面数字,数组列表。
+*#
+
+#set($isEmpty = "")
+
+##判断不为NULL或""
+#if($isEmpty)
+	isEmpty [$isEmpty] is empty! <br/>
+#end
+
+#if($velocityForm && $velocityForm.email)
+	velocityForm.email [$velocityForm.email] is null! <br/>
+#end
+
+##对象与对象属性都不为空情况
+#if($!velocityForm && $!velocityForm.name)
+	velocityForm [${velocityForm.name}] is not null! <br/>
+#end
+
+#if($!velocityForm && $!velocityForm.nullPoint)
+	velocityForm [${velocityForm.nullPoint}] is not null! <br/>
+#end
+
+#if($velocityForm && $velocityForm.nullPoint)
+	velocityForm [${velocityForm.nullPoint}] is not null! <br/>
+#end
+
+##对象不为NULL，对象属性都为NULL
+#if($velocityForm && !$velocityForm.nullPoint)
+	velocityForm.nullPoint [null] is null! <br/>
+#end
+
+
+
+
+<br />
+<h5>遍历LIST</h5>
+##LIST is NULL
+#**
+	Velocity  [error] Left side ($addresses.size()) of '>' operation has null value. Operation not possible.
+
+#if($addresses.size() > 0)
+	
+#end
+*#
+
+##fix null point grammar
+#if($addresses && $addresses.size() > 0)
+	
+#end
+
+##LIST is empty
+#if($telphones)
+	List telphones is not null or empty!<br/>
+#end
+
+#if(!$!telphones)
+	List telphones is null! <br/>
+#end
+
+#if($telphones && $telphones.size() > 0)
+	List telphones is null or empty and size 大于 0! <br/>
+#end
+
+##LIST is not empty
+#if($phones)
+	List phones is not null or empty!<br/>
+	#foreach($phone in $phones)
+		$phone<br />
+	#end
+#end
+
+
+
+
+
+
+
+<h5>遍历MAP</h5>
+
+##Map key match value is null dispose
+#if($!velocityForm.map.get("menuType") && ($velocityForm.map.get("menuType") == "aaaa"))
+	nullObject.nullPoint unequal null! <br/>
+#end
+#**
+	需要调查知识点
+	velocity 获取对象内属性是map集合失败
+*#
+
+
+<br />
+#foreach($item1 in $map.entrySet())
+	${item1.key} -- #if(!${item1.value}) is null 
+					#elseif(${item1.value} == "") is empty
+					#else ${item1.value}
+					#end<br />
+#end
+
+<br />
+key --value--value<br />
+#foreach($item in $map2.entrySet())
+	${item.key}--${item.value}--${map2.get($item.key)}<br />
+#end

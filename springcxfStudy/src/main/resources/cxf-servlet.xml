@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- START SNIPPET: beans -->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:jaxws="http://cxf.apache.org/jaxws" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd 
+http://cxf.apache.org/jaxws 
+http://cxf.apache.org/schemas/jaxws.xsd 
+http://cxf.apache.org/transports/http/configuration 
+http://cxf.apache.org/schemas/configuration/http-conf.xsd">
+
+	<!-- 发布接口方式一 -->
+<!--     <jaxws:endpoint id="HelloWorldService" address="/HelloWorldService"   -->
+<!--     	implementor="com.zjl.study.springcxf.webservice.impl.HelloWorldServiceImpl"/> -->
+
+	<!-- 发布接口方式二 -->
+	<bean id="HelloWorldServiceImpl" class="com.zjl.study.springcxf.webservice.impl.HelloWorldServiceImpl">
+	</bean>
+	<!-- 注意下面的address，这里的address的名称就是访问的WebService的name; #userServiceBean是直接引用Ioc容器中的Bean对象 -->
+	<jaxws:endpoint id="HelloWorldService" implementor="#HelloWorldServiceImpl" address="/HelloWorldService">
+	</jaxws:endpoint>
+    	
+    	
+    <jaxws:client id="client"  serviceClass="com.zjl.study.springcxf.webservice.HelloWorldService"
+        address="http://localhost:8080/springcxfStudy/ws/HelloWorldService"/>
+</beans>
+<!-- END SNIPPET: beans -->
