@@ -1,7 +1,9 @@
 package com.zjl.java8.study.example.stream.test;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collector;
+import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import com.zjl.java8.study.example.stream.data.Data;
@@ -41,5 +43,10 @@ public class Exercise {
 		// 4. 班级的3-10名(按照成绩)
 		List<Person> list3 = Data.getData().stream().sorted((p1, p2) -> p2.getScore() - p1.getScore()).skip(2).limit(8).collect(Collectors.toList());
 		System.out.println(list3);
+		
+		List<Person> personList = new ArrayList<Person>();
+		Map<String, Person> map = personList.stream().collect(Collectors.toMap(Person::getName, Function.identity()));
+		System.out.println(map);
+		
 	}
 }

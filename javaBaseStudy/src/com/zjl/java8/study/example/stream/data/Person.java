@@ -1,11 +1,14 @@
 package com.zjl.java8.study.example.stream.data;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 public class Person implements Comparable<Person> {
 	private String name;
 	private int age;
 	private int score;
+	private Set<String> address = new HashSet<>();
 	
 	public Person() {
 		super();
@@ -15,6 +18,14 @@ public class Person implements Comparable<Person> {
 		this.name = name;
 		this.age = age;
 		this.score = score;
+	}
+	
+	public Person(String name, int age, int score, Set<String> address) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.score = score;
+		this.address = address;
 	}
 	
 	@Override

@@ -12,8 +12,23 @@ public class ComparatorSort {
 	public static void main(String[] args) {
 //		testComparatorSort();
 //		testSort();
-		testMultiSort();
+//		testMultiSort();
+		ComparatorSort sort = new ComparatorSort();
+		sort.testEqualsSort();
 	}
+	
+	public void testEqualsSort() {
+		List<Sort> sourceList = new ArrayList<Sort>();
+		sourceList.add(new Sort(1, 11, 112));
+		sourceList.add(new Sort(2, 12, 111));
+		sourceList.add(new Sort(2, 13, 114));
+		sourceList.add(new Sort(3, 14, 113));
+		
+//		sourceList.sort(Comparator.comparingInt(obj -> obj.getOne()));
+		sourceList.sort(new MyComparator());
+		sourceList.forEach(obj -> System.out.println(obj.getOne() + "," + obj.getTwo()));
+	}
+
 	
 	public static void testMultiSort() {
 		List<Sort> sourceList = new ArrayList<Sort>();

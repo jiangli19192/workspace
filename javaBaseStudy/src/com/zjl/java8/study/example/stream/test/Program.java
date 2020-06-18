@@ -1,5 +1,6 @@
 package com.zjl.java8.study.example.stream.test;
 
+import java.util.Optional;
 import java.util.stream.Stream;
 
 import com.zjl.java8.study.example.stream.data.Data;
@@ -45,9 +46,9 @@ public class Program {
 		// System.out.println(map);
 
 		// 最终操作2：reduce
-		// Stream<Integer> s1 = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-		// Optional<Integer> ret = s1.reduce((n1, n2) -> n1 + n2);
-		// System.out.println(ret.get());
+		 Stream<Integer> s1 = Stream.of(1, 2, 3);
+		 Optional<Integer> ret = s1.reduce((n1, n2) -> n1 + n2);
+		 System.out.println(ret.get());
 
 		// 求总成绩
 		// Optional<Person> ret = s.reduce((n1, n2) -> new
@@ -90,7 +91,7 @@ public class Program {
 		// System.out.println(count);
 
 		// 最终操作6：forEach
-		s.forEach(System.out::println);
+//		s.forEach(System.out::println);
 
 		// 注意：流执行完最终操作后，就被关闭掉了，下面的操作就不能继续使用这个流了。
 		// 对于下面取最大值和最小值的流操作来说，取最大值后，此流就已经被关闭了；
