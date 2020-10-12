@@ -27,6 +27,10 @@ import org.apache.commons.collections4.map.MultiKeyMap;
 public class MultiKeyMapExample {
 
 	public static void main(String[] args) {
+		multiKeyMap_Class_Test();
+	}
+
+	private static void multiKeyMap_Class_Test() {
 		MultiKeyMap<Integer, String> myMap = new MultiKeyMap<Integer, String>();
 		//插入多个值
 		myMap.put(1,1,2,"112");
