@@ -15,7 +15,6 @@
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
@@ -89,6 +88,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\eclipse-workspace"/>
 			<item value="D:\work\workspace\workspace-study\designPatternStudy"/>
 			<item value="D:\work\workspace\workspace-study"/>
 			<item value="D:\work\workspace\workspace-study\myBatisStudy"/>
@@ -105,6 +105,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.zjl.study.redis"/>
+			<item value="com.zjl.study.redis.redisStudy"/>
 			<item value="com.zjl.study.designPattern"/>
 			<item value="com.zjl.study.spEL"/>
 			<item value="com.zjl.study.mybatis"/>
@@ -113,6 +115,7 @@
 			<item value="com.zjl.study.angularSpringmvcMybatis"/>
 		</list>
 		<list key="groupId">
+			<item value="com.zjl.study.redis"/>
 			<item value="com.zjl.study.designPattern"/>
 			<item value="com.zjl.study.spEL"/>
 			<item value="com.zjl.study.mybatis"/>
@@ -121,6 +124,7 @@
 			<item value="com.zjl.study.angularSpringmvcMybatis"/>
 		</list>
 		<list key="artifactId">
+			<item value="redisStudy"/>
 			<item value="designPatternStudy"/>
 			<item value="springExpressionLanguage"/>
 			<item value="myBatisStudy"/>

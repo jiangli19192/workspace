@@ -26,10 +26,12 @@ public class OfNullableTest {
 	private static void test3() {
 		Optional<String> empty = Optional.empty();
 		
-		if (!empty.isPresent()) {
-			// 此种情况一定要判断是否为空，不然会报“java.util.NoSuchElementException: No value present”
-			empty.get();
-		}
+		empty.ifPresent(str -> System.out.println(str));
+		
+//		if (!empty.isPresent()) {
+//			// 此种情况一定要判断是否为空，不然会报“java.util.NoSuchElementException: No value present”
+//			empty.get();
+//		}
 	}
 	
 	private static void test2(){

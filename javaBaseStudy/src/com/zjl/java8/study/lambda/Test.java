@@ -1,8 +1,11 @@
 package com.zjl.java8.study.lambda;
 
 import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 
 public class Test {
@@ -11,7 +14,14 @@ public class Test {
 		Test t = new Test();
 //		t.testOne();
 //		t.testTwo();
-		t.testThree();
+//		t.testThree();
+		t.testFour();
+	}
+	
+	private void testFour() {
+		List<String> list = null;
+		List<String> resultList = list.stream().filter(Objects::isNull).collect(Collectors.toList());
+		System.out.println(resultList);
 	}
 	
 	private void testThree() {

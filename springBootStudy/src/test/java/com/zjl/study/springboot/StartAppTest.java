@@ -10,7 +10,7 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import com.zjl.study.springboot.controller.HelloService;
+import com.zjl.study.springboot.controller.HelloWorldController;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = StartApp.class) // 通过Spring Boot加载上下文
@@ -18,11 +18,11 @@ import com.zjl.study.springboot.controller.HelloService;
 public class StartAppTest {
 	
 	@Resource
-	private HelloService helloService;
+	private HelloWorldController helloService;
 
 	@Test
 	public void test() {
-		assertEquals("hello", helloService.getName());
+		assertEquals("Hello World!!!", helloService.getName("World"));
 	}
 
 }

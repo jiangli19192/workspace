@@ -19,6 +19,8 @@
 		</repository>
 	</repositories>
 
+
+	<!-- Inherit defaults from Spring Boot  从Spring Boot继承默认值 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -30,6 +32,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
+	<!-- Add typical dependencies for a web application  为web应用程序添加标准的依赖关系 -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -61,6 +64,7 @@
 
 	</dependencies>
 
+	<!-- Add Spring repositories 添加Spring仓库 -->
 	<!-- https://www.iteye.com/blog/phoenixfu-2429768 -->
 	<pluginRepositories>
 		<pluginRepository>
@@ -70,6 +74,8 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+
+	<!-- 这个插件，可以将应用打包成一个可执行的jar包 -->
 	<build>
 		<plugins>
 			<plugin>

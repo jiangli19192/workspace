@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void multiKeyMap_Class_Test()&apos; from &apos;com.zjl.study.map.MultiKeyMapExample.main()&apos; to &apos;com.zjl.study.map.MultiKeyMapExample&apos;&#x0D;&#x0A;- Original project: &apos;javaBaseStudy&apos;&#x0D;&#x0A;- Method name: &apos;multiKeyMap_Class_Test&apos;&#x0D;&#x0A;- Destination type: &apos;com.zjl.study.map.MultiKeyMapExample&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;multiKeyMap_Class_Test&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.zjl.study.map{MultiKeyMapExample.java" name="multiKeyMap_Class_Test" replace="false" selection="670 405" stamp="1601192725519" version="1.0" visibility="2"/>
+</session>

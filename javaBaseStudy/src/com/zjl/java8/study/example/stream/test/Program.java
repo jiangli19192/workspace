@@ -1,5 +1,7 @@
 package com.zjl.java8.study.example.stream.test;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -17,9 +19,9 @@ import com.zjl.java8.study.example.stream.data.Person;
  */
 public class Program {
 	public static void main(String[] args) {
-		// Program.testPerson();
+		Program.testPerson();
 		// 集合的最终操作
-		Program.testCollectionStreamTerminalOperation();
+		// Program.testCollectionStreamTerminalOperation();
 	}
 
 	public static void testCollectionStreamTerminalOperation() {
@@ -46,9 +48,9 @@ public class Program {
 		// System.out.println(map);
 
 		// 最终操作2：reduce
-		 Stream<Integer> s1 = Stream.of(1, 2, 3);
-		 Optional<Integer> ret = s1.reduce((n1, n2) -> n1 + n2);
-		 System.out.println(ret.get());
+		Stream<Integer> s1 = Stream.of(1, 2, 3);
+		Optional<Integer> ret = s1.reduce((n1, n2) -> n1 + n2);
+		System.out.println(ret.get());
 
 		// 求总成绩
 		// Optional<Person> ret = s.reduce((n1, n2) -> new
@@ -91,7 +93,7 @@ public class Program {
 		// System.out.println(count);
 
 		// 最终操作6：forEach
-//		s.forEach(System.out::println);
+		// s.forEach(System.out::println);
 
 		// 注意：流执行完最终操作后，就被关闭掉了，下面的操作就不能继续使用这个流了。
 		// 对于下面取最大值和最小值的流操作来说，取最大值后，此流就已经被关闭了；
@@ -102,14 +104,26 @@ public class Program {
 	}
 
 	public static void testPerson() {
+		// 构造方法创建对象并赋值
 		// Person xiaoming = new Person("xiaoming", 10, 100);
 
+		// 使用空构造方法创建对象，使用属性set方法赋值
 		Person xiaoming = new Person();
 		xiaoming.setAge(10);
 		xiaoming.setName("xiaoming");
 		xiaoming.setScore(100);
 
-		Person zhangsan = new Person();
-		zhangsan.setName("zhangsan").setAge(10).setScore(100);
+		// 链式操作创建对象并赋值
+		Person zhangsan = new Person().setName("zhangsan").setAge(10).setScore(100);
+		Person lisi = new Person().setName("lisi").setAge(10).setScore(100);
+		Person wangwu = new Person().setName("wangwu").setAge(20).setScore(100);
+
+		List<Person> list = Arrays.asList(xiaoming, zhangsan, lisi);
+		List<Person> list_2 = Arrays.asList(lisi, wangwu);
+
+		System.out.println("List :" + list.stream().anyMatch(
+				person -> person.getAge() == 10));
+		System.out.println("List_2 :" + list_2.stream().anyMatch(
+				person -> person.getAge() == 10));
 	}
 }

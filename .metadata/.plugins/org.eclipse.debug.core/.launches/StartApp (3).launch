@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/springBootStudyBase/src/main/java/com/zjl/study/springboot/StartApp.java"/>
+<listEntry value="/springCloudRabbitMQStudy/src/main/java/com/zjl/study/springboot/StartApp.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.zjl.study.springboot.StartApp"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="springBootStudyBase"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="springCloudRabbitMQStudy"/>
 </launchConfiguration>
