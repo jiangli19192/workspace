@@ -1,0 +1,1 @@
+ProductType 枚举类创建例子
