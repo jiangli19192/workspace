@@ -1,12 +1,8 @@
 .metadata/
 
-**/.settings
-**/build
-**/bin
-**/*.classpath
-**/*.project
-**/target
-
+/**/.settings
+/**/bin
+/**/target
 
 /ActiveMQ-5.13/.settings/
 /ActiveMQ-5.13/bin/
@@ -60,3 +56,5 @@
 /poiStudy/.project
 /poiStudy/.settings
 /poiStudy/build
+/Servers
+/RemoteSystemsTempFiles
