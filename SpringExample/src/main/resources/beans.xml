@@ -3,8 +3,9 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="helloBean" class="com.mkyong.common.HelloWorld">
+	<bean id="person" class="com.zjl.bean.Person">
 		<property name="name" value="Mkyong" />
+		<property name="age" value="18" />
 	</bean>
 	
 </beans>
