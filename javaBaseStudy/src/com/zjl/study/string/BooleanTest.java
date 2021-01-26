@@ -6,5 +6,9 @@ public class BooleanTest {
 		System.out.println(String.valueOf(boo));
 		boolean boo1 = true;
 		System.out.println(String.valueOf(boo1));
+
+		
+		StringBuilder sb = new StringBuilder();
+		System.out.print(sb.length());;
 	}
 }

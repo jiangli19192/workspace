@@ -6,14 +6,17 @@ public class Sort {
 	private int three;
 	private String name;
 	
-	public Sort(String name) {
-		this.name = name;
-	}
-	
 	public Sort(int one, int two, int three) {
 		this.one = one;
 		this.two = two;
 		this.three = three;
+	}
+	
+	public Sort(int one, int two, int three, String name) {
+		this.one = one;
+		this.two = two;
+		this.three = three;
+		this.name = name;
 	}
 	
 
@@ -47,5 +50,17 @@ public class Sort {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public int compare(Sort sort) {
+		if (this.name.equals("one") && "two".equals(sort.getName())) {
+			return -1;
+		} else if (this.name.equals("one") && "three".equals(sort.getName())) {
+			return -1;
+		} else if (this.name.equals("two") && "three".equals(sort.getName())) {
+			return -1;
+		} else {
+			return 1;
+		}
 	}
 }

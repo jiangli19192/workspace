@@ -1,11 +1,17 @@
 package com.zjl.java8.study.lambda;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import com.zjl.java8.study.entity.Option;
 
 
 public class Test {
@@ -19,9 +25,25 @@ public class Test {
 	}
 	
 	private void testFour() {
-		List<String> list = null;
-		List<String> resultList = list.stream().filter(Objects::isNull).collect(Collectors.toList());
-		System.out.println(resultList);
+		Map<String, Option> map = new HashMap<>();
+		map.put("1", new Option());
+		map.put("2", new Option());
+		map.put("3", new Option());
+		map.put("4", new Option());
+		
+		List<Option> emptyOptionsForOld = getContainShowPriceResultOptions_old(new HashMap<>(), true);
+		emptyOptionsForOld.forEach(System.out::println);
+		
+		List<Option> optionsForOld = getContainShowPriceResultOptions_old(map, true);
+		optionsForOld.forEach(System.out::println);
+		
+		System.out.println("----------------------------------");
+		
+		List<Option> emptyOptions = getContainShowPriceResultOptions(new HashMap<>(), true);
+		emptyOptions.forEach(System.out::println);
+		
+		List<Option> options = getContainShowPriceResultOptions(map, true);
+		options.forEach(System.out::println);
 	}
 	
 	private void testThree() {
@@ -41,4 +63,32 @@ public class Test {
 		Hunman h = str -> System.out.println(str);
 		h.say("Hello World");
 	}
+	
+	private List<Option> getContainShowPriceResultOptions_old(Map<String, Option> map, boolean isShowPrice) {
+        if (Objects.isNull(map) || map.isEmpty()) {
+        	System.out.println("old method, map is empty!");
+            return Collections.emptyList();
+        }
+
+        List<Option> result = new ArrayList<>();
+        for (Map.Entry<String, Option> en : map.entrySet()) {
+            Option option = (Option) en.getValue();
+            option.setShowPrice(isShowPrice);
+            result.add(option);
+        }
+        return result;
+    }
+	
+    private List<Option> getContainShowPriceResultOptions(Map<String, Option> map, boolean isShowPrice) {
+        if (Objects.isNull(map) || map.isEmpty()) {
+        	System.out.println("map is empty!");
+            return Collections.emptyList();
+        }
+
+        return map.entrySet().stream()
+            .map(entry -> entry.getValue())
+            .filter(Objects::nonNull)
+            .peek(option -> option.setShowPrice(isShowPrice))
+            .collect(Collectors.toList());
+    }
 }

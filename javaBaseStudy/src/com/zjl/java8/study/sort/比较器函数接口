@@ -1,0 +1,2 @@
+ComparatorSort：应用函数接口Comparator，实现排序
+ParallelSort: Java8并行排序实例

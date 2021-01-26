@@ -3,6 +3,7 @@ package com.zjl.java8.study.optional;
 import java.util.Optional;
 
 /**
+ * https://www.cnblogs.com/lijingran/p/8727149.html
  * orElseGet与orElse方法类似，区别在于得到的默认值。orElse方法将传入的字符串作为默认值，
  * 
  * orElseGet方法可以接受Supplier接口的实现用来生成默认值。

@@ -1,0 +1,3 @@
+CeilTest：进一法取整
+RoundTest： 四舍五入取整
+CeilRoundMixed: Ceil和Round方法混合使用例子

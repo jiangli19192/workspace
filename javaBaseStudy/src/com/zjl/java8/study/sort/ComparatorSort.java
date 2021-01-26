@@ -7,6 +7,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * 应用函数接口Comparator，实现排序
+ * ClassName : ComparatorSort
+ * @author 张江立
+ * @date 2020年2月21日 下午10:01:19
+ *
+ */
 public class ComparatorSort {
 
 	public static void main(String[] args) {
@@ -64,5 +71,21 @@ public class ComparatorSort {
         list  = list.stream().sorted((n1,n2)->n1.compareTo(n2)).collect(Collectors.toList());
 
         System.out.println(list);
+	}
+	
+	public static void testSortByListSort() {
+		List<Sort> sourceList = new ArrayList<Sort>();
+		sourceList.add(new Sort(1, 13, 112, "three"));
+		sourceList.add(new Sort(2, 12, 111, "one"));
+		sourceList.add(new Sort(2, 12, 114, "two"));
+		sourceList.add(new Sort(3, 11, 113, "one"));
+		sourceList.add(new Sort(4, 14, 114, "three"));
+		
+		sourceList.sort(Sort::compare);
+		
+		for (Sort sort : sourceList) {
+			System.out.println("name: " + sort.getName());
+			
+		}
 	}
 }
