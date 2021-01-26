@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;sdf&apos; in &apos;com.zjl.study.date.DateTest.main(...)&apos; to &apos;simpleDateFormat&apos;&#x0D;&#x0A;- Original project: &apos;javaBaseStudy&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.study.date.DateTest.main(String[]).sdf&apos;&#x0D;&#x0A;- Renamed element: &apos;sdf&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;sdf&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.zjl.study.date{DateTest.java[DateTest~main~\[QString;@sdf!739!803!756!758!QSimpleDateFormat;!0!false" name="simpleDateFormat" references="true" stamp="1578972989633" version="1.0"/>
-</session>

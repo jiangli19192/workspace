@@ -1,8 +1,0 @@
-1481524967417	Rename local variable 'bytes'
-1481526001364	Extract method 'getFileEncodName'
-1481526177967	Copy compilation unit
-1481528326201	Copy compilation unit
-1481530569073	Rename type 'ReadCSVFile'
-1481530581284	Rename type 'ReadCSVFile2'
-1481530594455	Rename type 'ReadCSVFile3'
-1481619742668	Convert local variable 'fileInputStream' to field

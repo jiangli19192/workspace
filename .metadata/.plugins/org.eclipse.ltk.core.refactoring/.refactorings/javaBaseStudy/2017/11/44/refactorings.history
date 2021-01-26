@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;detergent&apos; in &apos;com.zjl.example.extendsSyntax.Soap.main(...)&apos; to &apos;soap&apos;&#x0D;&#x0A;- Original project: &apos;javaBaseStudy&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.example.extendsSyntax.Soap.main(String[]).detergent&apos;&#x0D;&#x0A;- Renamed element: &apos;detergent&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;detergent&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.zjl.example.extendsSyntax{Soap.java[Soap~main~\[QString;@detergent!216!243!221!229!QSoap;!0!false" name="soap" references="true" stamp="1509607127887" version="1.0"/>
-</session>

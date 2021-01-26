@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;arrayCopy&apos; in &apos;com.zjl.study.array.ArrayCopyTest.main(...)&apos; to &apos;arrayDestination&apos;&#x0D;&#x0A;- Original project: &apos;javaBaseStudy&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.study.array.ArrayCopyTest.main(String[]).arrayCopy&apos;&#x0D;&#x0A;- Renamed element: &apos;arrayCopy&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;arrayCopy&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.zjl.study.array{ArrayCopyTest.java[ArrayCopyTest~main~\[QString;@arrayCopy!163!194!169!177!\[I!0!false" name="arrayDestination" references="true" stamp="1530845222214" version="1.0"/>
-</session>

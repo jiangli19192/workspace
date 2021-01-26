@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;empty&apos; in &apos;com.zjl.java8.study.optional.OfNullableTest.main(...)&apos; to &apos;name&apos;&#x0D;&#x0A;- Original project: &apos;java8Study&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.java8.study.optional.OfNullableTest.main(String[]).empty&apos;&#x0D;&#x0A;- Renamed element: &apos;empty&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;empty&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.zjl.java8.study.optional{OfNullableTest.java[OfNullableTest~main~\[QString;@empty!381!431!398!402!QOptional\&lt;QString;&gt;;!0!false" name="name" references="true" stamp="1491126520070" version="1.0"/>
-</session>

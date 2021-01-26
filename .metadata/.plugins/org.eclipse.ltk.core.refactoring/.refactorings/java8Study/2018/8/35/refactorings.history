@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;list&apos; in &apos;com.zjl.java8.study.iteration.AllMatchTest.main(...)&apos; to &apos;list2&apos;&#x0D;&#x0A;- Original project: &apos;java8Study&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.java8.study.iteration.AllMatchTest.main(String[]).list&apos;&#x0D;&#x0A;- Renamed element: &apos;list&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;list&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.zjl.java8.study.iteration{AllMatchTest.java[AllMatchTest~main~\[QString;@list!321!367!335!338!QList\&lt;QInteger;&gt;;!0!false" name="list2" references="true" stamp="1535450742244" version="1.0"/>
-</session>

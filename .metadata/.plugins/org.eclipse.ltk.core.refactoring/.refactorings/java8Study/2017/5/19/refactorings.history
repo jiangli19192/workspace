@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;set&apos; in &apos;com.zjl.java8.study.optional.OfNullableTest.test2()&apos; to &apos;set2&apos;&#x0D;&#x0A;- Original project: &apos;java8Study&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.java8.study.optional.OfNullableTest.test2().set&apos;&#x0D;&#x0A;- Renamed element: &apos;set&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;set&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.zjl.java8.study.optional{OfNullableTest.java[OfNullableTest~test2@set!580!621!593!595!QSet\&lt;QInteger;&gt;;!0!false" name="set2" references="true" stamp="1494587397170" version="1.0"/>
-</session>

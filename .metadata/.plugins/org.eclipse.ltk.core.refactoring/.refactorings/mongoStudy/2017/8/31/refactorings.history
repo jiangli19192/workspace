@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;mongoStudy&apos;&#x0D;&#x0A;- Original project: &apos;mongoStudy&apos;&#x0D;&#x0A;- Original element: &apos;mongoStudy/src/test/java/snippet&apos;" description="Delete element" element1="/src\/test\/java&lt;snippet" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1501668559686" subPackages="false" version="1.0"/>
-</session>

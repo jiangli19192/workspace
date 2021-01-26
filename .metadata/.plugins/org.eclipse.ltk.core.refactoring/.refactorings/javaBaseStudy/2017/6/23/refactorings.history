@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;number2&apos; in &apos;com.zjl.study.RegExp.RegularExpression.main(...)&apos; to &apos;number3&apos;&#x0D;&#x0A;- Original project: &apos;javaBaseStudy&apos;&#x0D;&#x0A;- Original element: &apos;com.zjl.study.RegExp.RegularExpression.main(String[]).number2&apos;&#x0D;&#x0A;- Renamed element: &apos;number2&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;number2&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.zjl.study.RegExp{RegularExpression.java[RegularExpression~main~\[QString;@number2!547!575!554!560!QString;!0!false" name="number3" references="true" stamp="1496731305041" version="1.0"/>
-</session>

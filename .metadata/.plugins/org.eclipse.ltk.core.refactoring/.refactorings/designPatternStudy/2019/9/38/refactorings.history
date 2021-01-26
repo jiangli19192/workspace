@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;designPatternStudy/src/main/java/com/zjl/study/designPattern/singleResponsibilityPrinciple/Untitled 1&apos; to &apos;单一职责原则&apos;" description="Rename resource &apos;Untitled 1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/zjl/study/designPattern/singleResponsibilityPrinciple/Untitled 1" name="单一职责原则" stamp="1568598296352" updateReferences="true"/>
-</session>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;testThreadCount.ThreadObject&apos; to &apos;ThreadImplRannable&apos;&#x0D;&#x0A;- Original project: &apos;threadStudy&apos;&#x0D;&#x0A;- Original element: &apos;testThreadCount.ThreadObject&apos;&#x0D;&#x0A;- Renamed element: &apos;testThreadCount.ThreadImplRannable&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ThreadObject&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;testThreadCount{ThreadObject.java[ThreadObject" matchStrategy="1" name="ThreadImplRannable" qualified="false" references="true" similarDeclarations="false" stamp="1469781778603" textual="false" version="1.0"/>
-</session>
