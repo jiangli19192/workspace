@@ -1,5 +1,13 @@
 .metadata/
 
+**/.settings
+**/build
+**/bin
+**/*.classpath
+**/*.project
+**/target
+
+
 /ActiveMQ-5.13/.settings/
 /ActiveMQ-5.13/bin/
 /ActiveMQ-5.13/.classpath
@@ -45,3 +53,10 @@
 /myBatisNoMavenStudy/.classpath
 /myBatisNoMavenStudy/.project
 /myBatisNoMavenStudy/.settings
+/myBatisStudy/.project
+/myBatisStudy/.settings
+/myBatisStudy/.classpath
+/poiStudy/.classpath
+/poiStudy/.project
+/poiStudy/.settings
+/poiStudy/build
