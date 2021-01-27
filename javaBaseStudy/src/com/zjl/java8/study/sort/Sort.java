@@ -6,6 +6,10 @@ public class Sort {
 	private int three;
 	private String name;
 	
+	public Sort(String name) {
+		this.name = name;
+	}
+	
 	public Sort(int one, int two, int three) {
 		this.one = one;
 		this.two = two;
