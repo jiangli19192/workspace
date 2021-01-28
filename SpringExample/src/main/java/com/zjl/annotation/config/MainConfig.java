@@ -3,9 +3,11 @@ package com.zjl.annotation.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;
+import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 
 import com.zjl.annotation.bean.Person;
 
@@ -17,9 +19,15 @@ import com.zjl.annotation.bean.Person;
  *
  */
 @Configuration // 告诉Spring这是一个配置类
-@ComponentScan(value = "com.zjl.annotation", includeFilters = {
-		@Filter(type = FilterType.ANNOTATION, classes = {Controller.class})
-}, useDefaultFilters = false) // 开启包扫描配置，等同于配置文件中的<context:component-scan>标签
+@ComponentScans(value = {
+		@ComponentScan(value = "com.zjl.annotation", includeFilters = {
+				@Filter(type = FilterType.ANNOTATION, classes = {Controller.class})
+		}, useDefaultFilters = false),
+		@ComponentScan(value = "com.zjl.annotation", excludeFilters = {
+				@Filter(type = FilterType.ANNOTATION, classes = {Service.class})
+		})
+})
+// 开启包扫描配置，等同于配置文件中的<context:component-scan>标签
 // ComponentScan value:指定要扫描的包
 // excludeFilters = Filter[]:指定扫描的时候，按照什么样的规则排除哪些组件
 // includeFilters = Filter[]:指定扫描的时候，只需要包含哪些组件
