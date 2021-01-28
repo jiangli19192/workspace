@@ -1,13 +1,11 @@
 package com.zjl;
 
-import java.util.Iterator;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.zjl.bean.Person;
-import com.zjl.config.MainConfig;
+import com.zjl.annotation.bean.Person;
+import com.zjl.annotation.config.MainConfig;
 
 public class MainTest {
 

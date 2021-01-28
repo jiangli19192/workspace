@@ -1,11 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean id="person" class="com.zjl.bean.Person">
+
+	<!-- 开启包扫描，在属性base-package定义的包路径下，只要标注了@Controller、@Service、@Repository、@Component这些注解，都会被识别出来 -->
+<!-- 	<context:component-scan base-package="com.zjl.annotation"></context:component-scan> -->
+
+	<!-- 注册Bean -->
+	<bean id="person" class="com.zjl.annotation.bean.Person">
 		<property name="name" value="Mkyong" />
 		<property name="age" value="18" />
 	</bean>
-	
+
+
 </beans>

@@ -1,4 +1,4 @@
-package com.zjl.bean;
+package com.zjl.annotation.bean;
 
 public class Person {
 	private String name;

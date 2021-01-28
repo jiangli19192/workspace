@@ -1,4 +1,4 @@
-package com.zjl.common;
+package com.zjl.annotation.common;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

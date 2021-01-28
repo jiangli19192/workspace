@@ -1,4 +1,4 @@
-package com.zjl.common;
+package com.zjl.annotation.common;
 
 /**
  * Hello world!

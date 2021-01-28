@@ -1,0 +1,8 @@
+package com.zjl.annotation.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class BookDao {
+
+}

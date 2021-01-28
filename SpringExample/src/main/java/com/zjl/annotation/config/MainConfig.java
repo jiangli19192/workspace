@@ -1,9 +1,10 @@
-package com.zjl.config;
+package com.zjl.annotation.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.zjl.bean.Person;
+import com.zjl.annotation.bean.Person;
 
 /**
  * 配置类==配置文件
@@ -13,6 +14,7 @@ import com.zjl.bean.Person;
  *
  */
 @Configuration // 告诉Spring这是一个配置类
+@ComponentScan(value = "com.zjl.annotation") // 开启包扫描配置，等同于配置文件中的<context:component-scan>标签
 public class MainConfig {
 
 	// 给容器中注册一个Bean;类型为返回值的类型，id默认是用方法名作为id
