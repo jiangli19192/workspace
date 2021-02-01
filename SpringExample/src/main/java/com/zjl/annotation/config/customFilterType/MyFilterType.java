@@ -37,6 +37,9 @@ public class MyFilterType implements TypeFilter{
 		Resource resource = metadataReader.getResource();
 		
 		String className = classMetadata.getClassName();
+		if (className.contains("er")) {
+			return true;
+		}
 		return false;
 	}
 
