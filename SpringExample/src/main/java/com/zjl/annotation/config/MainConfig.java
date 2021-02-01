@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.zjl.annotation.bean.Person;
 import com.zjl.annotation.common.HelloWorld;
+import com.zjl.annotation.config.customFilterType.MyFilterType;
 
 /**
  * 配置类==配置文件
@@ -23,7 +24,7 @@ import com.zjl.annotation.common.HelloWorld;
 @ComponentScans(value = {
 //		@ComponentScan(value = "com.zjl.annotation")
 		@ComponentScan(value = "com.zjl.annotation", includeFilters = {
-				@Filter(type = FilterType.ANNOTATION, classes = {Controller.class})
+				@Filter(type = FilterType.CUSTOM, classes = {MyFilterType.class})
 		}, useDefaultFilters = false)
 		,@ComponentScan(value = "com.zjl.annotation", excludeFilters = {
 				@Filter(type = FilterType.ASSIGNABLE_TYPE, classes = {HelloWorld.class})
