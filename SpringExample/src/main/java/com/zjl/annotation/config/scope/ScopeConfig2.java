@@ -11,6 +11,8 @@ public class ScopeConfig2 {
 	
 	// 默认的都是单实例
 	/**
+	 * Scope的作用是调整作用域
+	 * 
 	 * ConfigurableBeanFactory#SCOPE_PROTOTYPE
 	 * ConfigurableBeanFactory#SCOPE_SINGLETON
 	 * org.springframework.web.context.WebApplicationContext#SCOPE_REQUEST
