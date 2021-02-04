@@ -4,6 +4,16 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class ScopeConfigTest {
+	
+	@Test
+	public void test2() {
+		try (
+			AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(ScopeConfig2.class)) {
+			System.out.println("IOC容器创建成功...");
+		} catch (Exception e) {
+			System.out.println("容器启动错误.");
+		}
+	}
 
 	@Test
 	public void test() {
