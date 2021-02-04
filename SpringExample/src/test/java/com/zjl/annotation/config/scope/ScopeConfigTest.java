@@ -18,7 +18,7 @@ public class ScopeConfigTest {
 			
 			Object bean = applicationContext.getBean("person");
 			Object bean2 = applicationContext.getBean("person");
-			System.out.println(bean == bean2);
+			System.out.println("配置的作用域scope的值是prototype,相同ID的两个实例是不相等的：" + (bean == bean2));
 		} catch (Exception e) {
 			System.out.println("容器启动错误.");
 		}

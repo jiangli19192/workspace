@@ -20,7 +20,7 @@ public class ScopeConfig {
 	 * request:同一次请求创建一个实例
 	 * session:同一个session创建一个实例
 	 */
-	@Scope
+	@Scope("prototype")
 	@Bean("person")
 	public Person person() {
 		return new Person("lisi", 20);

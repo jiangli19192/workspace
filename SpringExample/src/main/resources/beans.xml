@@ -10,7 +10,8 @@
 <!-- 	<context:component-scan base-package="com.zjl.annotation"></context:component-scan> -->
 
 	<!-- 注册Bean -->
-	<bean id="person" class="com.zjl.annotation.bean.Person">
+	<!-- 在配置文件内，添加对象作用域scope属性值是多实例的prototype -->
+	<bean id="person" class="com.zjl.annotation.bean.Person" scope="prototype">
 		<property name="name" value="Mkyong" />
 		<property name="age" value="18" />
 	</bean>
