@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Lazy;
 import com.zjl.annotation.bean.Color;
 import com.zjl.annotation.bean.Person;
 import com.zjl.annotation.bean.Red;
+import com.zjl.annotation.config._import.importBeanDefinitionRegistrarImpl.CustomImportBeanDefinitionRegistrar;
 import com.zjl.annotation.config._import.importSelectorImpl.MyImportSelector;
 import com.zjl.annotation.config.conditional.conditionImpl.WindowsCondition;
 
@@ -16,7 +17,7 @@ import com.zjl.annotation.config.conditional.conditionImpl.WindowsCondition;
 /** @Import(Color.class)是导入单个组件 */
 //@Import(Color.class)
 /** @Import({Color.class, Red.class})是导入多个组件 */
-@Import({Color.class, Red.class, MyImportSelector.class})
+@Import({Color.class, Red.class, MyImportSelector.class, CustomImportBeanDefinitionRegistrar.class})
 @Conditional({WindowsCondition.class})
 @Configuration
 public class ImportConfig {
@@ -28,6 +29,7 @@ public class ImportConfig {
 	 * 3）、@Import[快速的给容器中导入一个组件]
 	 * 		1)、@Import(要导入到容器中的组件):容器中就会自动注册这个组件，id默认是组件的全类名
 	 * 		2）、ImportSelector:返回需要导入的组件的全类名数组；
+	 * 		3)、ImportBeanDefinitionRegistrar：手动注册Bean到容器中
 	 */
 	
 	@Lazy
