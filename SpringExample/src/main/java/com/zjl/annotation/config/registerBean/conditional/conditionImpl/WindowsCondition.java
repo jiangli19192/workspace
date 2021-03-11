@@ -1,4 +1,4 @@
-package com.zjl.annotation.config.conditional.conditionImpl;
+package com.zjl.annotation.config.registerBean.conditional.conditionImpl;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;

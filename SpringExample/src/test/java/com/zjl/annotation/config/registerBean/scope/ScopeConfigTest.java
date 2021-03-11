@@ -1,4 +1,4 @@
-package com.zjl.annotation.config.scope;
+package com.zjl.annotation.config.registerBean.scope;
 
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

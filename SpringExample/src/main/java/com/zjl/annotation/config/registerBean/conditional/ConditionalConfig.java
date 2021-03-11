@@ -1,20 +1,17 @@
-package com.zjl.annotation.config.conditional;
+package com.zjl.annotation.config.registerBean.conditional;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Scope;
 
 import com.zjl.annotation.bean.Person;
-import com.zjl.annotation.config.conditional.conditionImpl.LinuxCondition;
-import com.zjl.annotation.config.conditional.conditionImpl.WindowsCondition;
-// 满足当前条件，这个类中配置的所有bean注册才能生效;用于统一设置
-@Conditional({WindowsCondition.class})
-@Configuration
-public class ConditionalConfig2 {
+import com.zjl.annotation.config.registerBean.conditional.conditionImpl.LinuxCondition;
+import com.zjl.annotation.config.registerBean.conditional.conditionImpl.WindowsCondition;
 
-	@Scope
+@Configuration
+public class ConditionalConfig {
+
 	@Lazy
 	@Bean("person")
 	public Person person() {
@@ -28,6 +25,7 @@ public class ConditionalConfig2 {
 	 * 如果是Windows系统，给容器注册@Bean("bill")
 	 * 如果是Linux系统，给容器注册@Bean("linus")
 	 */
+	@Conditional({WindowsCondition.class})
 	@Bean("bill")
 	public Person person01() {
 		return new Person("Bill Gates", 62);

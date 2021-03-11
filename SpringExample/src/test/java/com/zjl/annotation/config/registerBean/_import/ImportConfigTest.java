@@ -1,4 +1,4 @@
-package com.zjl.annotation.config._import;
+package com.zjl.annotation.config.registerBean._import;
 
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

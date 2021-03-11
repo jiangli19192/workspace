@@ -1,4 +1,4 @@
-package com.zjl.annotation.config._import.importBeanDefinitionRegistrarImpl;
+package com.zjl.annotation.config.registerBean._import.importBeanDefinitionRegistrarImpl;
 
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;

@@ -1,4 +1,4 @@
-package com.zjl.annotation.config.conditional.conditionImpl;
+package com.zjl.annotation.config.registerBean.conditional.conditionImpl;
 
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;

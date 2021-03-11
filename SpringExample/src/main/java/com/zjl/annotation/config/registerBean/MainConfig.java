@@ -1,4 +1,4 @@
-package com.zjl.annotation.config;
+package com.zjl.annotation.config.registerBean;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -6,12 +6,10 @@ import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 
 import com.zjl.annotation.bean.Person;
 import com.zjl.annotation.common.HelloWorld;
-import com.zjl.annotation.config.customFilterType.MyFilterType;
+import com.zjl.annotation.config.registerBean.customFilterType.MyFilterType;
 
 /**
  * 配置类==配置文件

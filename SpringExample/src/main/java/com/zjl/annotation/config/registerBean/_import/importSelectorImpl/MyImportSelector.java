@@ -1,4 +1,4 @@
-package com.zjl.annotation.config._import.importSelectorImpl;
+package com.zjl.annotation.config.registerBean._import.importSelectorImpl;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;

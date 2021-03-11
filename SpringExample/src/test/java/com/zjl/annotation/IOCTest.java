@@ -3,7 +3,7 @@ package com.zjl.annotation;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.zjl.annotation.config.MainConfig;
+import com.zjl.annotation.config.registerBean.MainConfig;
 
 public class IOCTest {
 

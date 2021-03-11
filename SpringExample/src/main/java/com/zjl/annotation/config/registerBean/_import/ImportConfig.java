@@ -1,4 +1,4 @@
-package com.zjl.annotation.config._import;
+package com.zjl.annotation.config.registerBean._import;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Lazy;
 import com.zjl.annotation.bean.Color;
 import com.zjl.annotation.bean.Person;
 import com.zjl.annotation.bean.Red;
-import com.zjl.annotation.config._import.importBeanDefinitionRegistrarImpl.CustomImportBeanDefinitionRegistrar;
-import com.zjl.annotation.config._import.importSelectorImpl.MyImportSelector;
-import com.zjl.annotation.config.conditional.conditionImpl.WindowsCondition;
+import com.zjl.annotation.config.registerBean._import.importBeanDefinitionRegistrarImpl.CustomImportBeanDefinitionRegistrar;
+import com.zjl.annotation.config.registerBean._import.importSelectorImpl.MyImportSelector;
+import com.zjl.annotation.config.registerBean.conditional.conditionImpl.WindowsCondition;
 
 // @Import导入组件，id默认是组件的全类名
 /** @Import(Color.class)是导入单个组件 */

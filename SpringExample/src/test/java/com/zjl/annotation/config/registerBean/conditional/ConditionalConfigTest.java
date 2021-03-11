@@ -1,4 +1,4 @@
-package com.zjl.annotation.config.conditional;
+package com.zjl.annotation.config.registerBean.conditional;
 
 import java.util.Map;
 
