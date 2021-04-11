@@ -7,9 +7,11 @@ public class Client {
     public static void main(String[] args) {
         IMaterial book = new Book();
         IMaterial newsPaper = new NewsPaper();
+        IMaterial iPad = new IPad();
         Mather mather = new Mather();
         mather.read(book);
         mather.read(newsPaper);
+        mather.read(iPad);
     }
 }
 
@@ -37,6 +39,12 @@ class Book implements IMaterial {
 class NewsPaper implements IMaterial {
     public String getContent() {
         return "报纸的故事很精彩";
+    }
+}
+
+class IPad implements IMaterial {
+    public String getContent() {
+        return "IPad内的故事很精彩";
     }
 }
 
