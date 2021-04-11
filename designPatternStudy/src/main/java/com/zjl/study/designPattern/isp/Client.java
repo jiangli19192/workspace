@@ -17,11 +17,34 @@ public class Client {
     }
 }
 
-interface I {
+interface I1 {
+    /**
+     * method1
+     */
     void method1();
+}
+
+interface I2 {
+    /**
+     * method2
+     */
     void method2();
+
+    /**
+     * method3
+     */
     void method3();
+}
+
+interface I3 {
+    /**
+     * method4
+     */
     void method4();
+
+    /**
+     * method5
+     */
     void method5();
 }
 
@@ -29,18 +52,18 @@ interface I {
  * A 依赖接口中的1,2,3三个方法
  */
 class A {
-    public void depend1(I i) {
+    public void depend1(I1 i) {
         i.method1();
     }
-    public void depend2(I i) {
+    public void depend2(I2 i) {
         i.method2();
     }
-    public void depend3(I i) {
+    public void depend3(I2 i) {
         i.method3();
     }
 }
 
-class B implements I {
+class B implements I1, I2 {
     public void method1() {
         System.out.println("method1......");
     }
@@ -52,42 +75,26 @@ class B implements I {
     public void method3() {
         System.out.println("method3......");
     }
-
-    public void method4() {
-
-    }
-
-    public void method5() {
-
-    }
 }
 
 /**
  * C 依赖接口中的1,4,5三个接口
  */
 class C {
-    public void depend1(I i) {
+    public void depend1(I1 i) {
         i.method1();
     }
-    public void depend4(I i) {
+    public void depend4(I3 i) {
         i.method4();
     }
-    public void depend5(I i) {
+    public void depend5(I3 i) {
         i.method5();
     }
 }
 
-class D implements I {
+class D implements I1, I3 {
     public void method1() {
         System.out.println("method1......");
-    }
-
-    public void method2() {
-
-    }
-
-    public void method3() {
-
     }
 
     public void method4() {
