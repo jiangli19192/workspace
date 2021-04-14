@@ -20,6 +20,21 @@
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.4</version>
 		</dependency>
+
+		<!-- Start XStream : 基于Java的类库，可以轻易的将Java对象和XML文档相互转换 -->
+		<!-- https://www.cnblogs.com/coding-farmer/p/13042646.html -->
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.15</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jettison</groupId>
+			<artifactId>jettison</artifactId>
+			<version>1.4.1</version>
+		</dependency>
+		<!-- End XStream -->
 	</dependencies>
 
 	<build>
