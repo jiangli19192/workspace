@@ -1,7 +1,9 @@
 package com.zjl.java8.study.funcitonalInterface;
 /**
- * 文件描述 函数式接口:
- *      有且仅有一个抽象方法，但是可以有多个非抽象方法的接口。
+ * 函数式接口定义注意事项:
+ * 1.有且仅有一个抽象方法，但是可以有多个非抽象方法的接口。
+ * 2.默认方法除外：default void hi()
+ * 3.Object中的方法除外：boolean equals(Object obj);
  **/
 @FunctionalInterface
 public interface Hello {
