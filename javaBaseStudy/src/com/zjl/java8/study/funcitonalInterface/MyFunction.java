@@ -13,15 +13,32 @@ package com.zjl.java8.study.funcitonalInterface;
  */
 @FunctionalInterface
 public interface MyFunction<A, B, C> {
-	
+
+	/**
+	 * 有且仅有一个抽象方法
+	 * @param a
+	 * @param b
+	 * @return c
+	 */
 	C doSum(A a, B b);
-	
+
+	/**
+	 * 第一个默认方法
+	 */
 	default void doa() {};
+
+	/**
+	 * 第二个默认方法
+	 * @return
+	 */
+	default String dao() {
+		return "sss";
+	};
 }
 
 class MyFunctionTest {
 	public static void main(String[] args) {
-		MyFunction<Integer, Integer, Integer> fun = (a, b) -> (int)a + (int)b;
+		MyFunction<Integer, Integer, Integer> fun = (a, b) -> a + b;
 		System.out.println(fun.doSum(1, 2));
 	}
 }
