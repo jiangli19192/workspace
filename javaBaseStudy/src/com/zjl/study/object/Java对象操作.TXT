@@ -2,3 +2,4 @@ ByteSizeUtil:通过Java代码实现对象、List类集、数组、Map及常用�
 EqualHashcodeTest:
 EqualsTest:
 ObjectTest:
+AutoBoxingAndUnboxingTest:自动装箱与拆箱测试类
