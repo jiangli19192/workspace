@@ -3,15 +3,30 @@ package com.zjl.study.variables;
 public class BooleanTest {
 	
 	public static void main(String[] args) {
+		BooleanTest test = new BooleanTest();
+		test.testMethodParameterIsBoolean();
+		
+		test.testMethodParameterIsObject();
+	}
+
+	/**
+	 * 测试方法参数是Boolean类型的形式参数
+	 */
+	public void testMethodParameterIsBoolean() {
 		Boolean boo = Boolean.FALSE;
 		Integer int1 = new Integer(200000000);
-		BooleanTest test = new BooleanTest();
-		test.changeParameterValueToTrue(boo, int1);
+
+		changeParameterValueToTrue(boo, int1);
 		System.out.println("boolean boo = " + boo);
 		System.out.println("Integer int1 = " + int1);
-		
+	}
+
+	/**
+	 * 测试方法参数是Object类型的形式参数
+	 */
+	public void testMethodParameterIsObject() {
 		DataClass dataClass = new DataClass();
-		test.changeClassValueToTrue(dataClass);
+		changeClassValueToTrue(dataClass);
 		System.out.println("boolean boo = " + dataClass.isBoo2());
 		System.out.println("Integer int1 = " + dataClass.getInt2());
 	}
