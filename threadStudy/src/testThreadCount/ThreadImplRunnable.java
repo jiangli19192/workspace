@@ -1,9 +1,9 @@
 package testThreadCount;
 
-public class ThreadImplRannable implements Runnable {
+public class ThreadImplRunnable implements Runnable {
 	private String threadName;
 	
-	public ThreadImplRannable(String threadName) {
+	public ThreadImplRunnable(String threadName) {
 		this.threadName = threadName;
 	}
 

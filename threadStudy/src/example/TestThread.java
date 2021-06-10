@@ -1,6 +1,7 @@
 package example;
 
 /**
+ * 第一种创建线程的方式
  * 扩展Thread类实现的多线程例子
  * @author 张江立
  * @date 2016-3-5 22:15
@@ -28,7 +29,8 @@ public class TestThread extends Thread{
 	public static void main(String[] args) {
 		Thread t1 = new TestThread("阿三"); 
         Thread t2 = new TestThread("李四"); 
-        
+
+        // start()方法是一个native方法，它将启动一个新线程，并执行run()方法。
         // 启动线程
         t1.start(); 
         t2.start();
