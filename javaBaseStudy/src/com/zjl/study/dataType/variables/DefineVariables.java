@@ -1,4 +1,4 @@
-package com.zjl.study.variables;
+package com.zjl.study.dataType.variables;
 
 public class DefineVariables {
 	private int a = 1; // 实例变量

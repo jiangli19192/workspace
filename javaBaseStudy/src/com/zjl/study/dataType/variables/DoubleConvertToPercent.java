@@ -1,4 +1,4 @@
-package com.zjl.study.variables;
+package com.zjl.study.dataType.variables;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -11,23 +11,23 @@ import java.text.NumberFormat;
  *
  */
 public class DoubleConvertToPercent {
-	
+
 	public static void main(String[] args) {
 		Double rate =0.0302;
-		NumberFormat num = NumberFormat.getPercentInstance(); 
+		NumberFormat num = NumberFormat.getPercentInstance();
 		String rates = num.format(rate);
-		
+
 		System.out.println(rates);
-		
-		
+
+
 		double result1=0.51111122111111;
 		DecimalFormat df = new DecimalFormat("0.00%");
 		String r = df.format(result1);
 		System.out.println(r);//great
-		
+
 		System.out.println();
-		
-		
+
+
 		Double evaluation = 0.0302;
 		NumberFormat numberFormat = NumberFormat.getPercentInstance();
 		numberFormat.setMaximumIntegerDigits(3);

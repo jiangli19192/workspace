@@ -1,11 +1,11 @@
-package com.zjl.study.variables;
+package com.zjl.study.dataType.variables;
 
 public class BooleanTest {
-	
+
 	public static void main(String[] args) {
 		BooleanTest test = new BooleanTest();
 		test.testMethodParameterIsBoolean();
-		
+
 		test.testMethodParameterIsObject();
 	}
 
@@ -36,7 +36,7 @@ public class BooleanTest {
 		int1 = 2;
 		System.out.println("already execute this operation");
 	}
-	
+
 	public void changeClassValueToTrue(DataClass dataClass) {
 		dataClass.setBoo2(true);
 		dataClass.setInt2(2);
@@ -47,7 +47,7 @@ public class BooleanTest {
 class DataClass{
 	private boolean boo2 = false;
 	private int int2 = 1;
-	
+
 	boolean isBoo2() {
 		return boo2;
 	}

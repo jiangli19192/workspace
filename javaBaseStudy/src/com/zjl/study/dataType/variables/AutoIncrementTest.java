@@ -1,8 +1,8 @@
-package com.zjl.study.variables;
+package com.zjl.study.dataType.variables;
 
 /**
  * 前++和后++总结：其实大家只要记住一句话就可以了，前++是先自加再使用而后++是先使用再自加！ ClassName : Test
- * 
+ *
  * @author 张江立
  * @date 2019年2月14日 下午5:40:32
  *
