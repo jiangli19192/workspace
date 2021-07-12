@@ -1,0 +1,4 @@
+1.第一种创建线程的方式,继承Thread类：ExtendsThread
+2.第二种创建线程的方式,实现Runnable接口：ImplementRunnable
+3.第三种创建线程的方式,ExecutorService、Callable<Class>、Future有返回值线程
+4.第四种创建线程的方式,基于线程池的方式：

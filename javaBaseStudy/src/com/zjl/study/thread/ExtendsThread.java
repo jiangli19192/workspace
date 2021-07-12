@@ -1,6 +1,8 @@
 package com.zjl.study.thread;
 
 /**
+ * 第一种创建线程的方式
+ *
  * 继承线程类,创建一个新线程
  * ClassName : ExtendsThread
  * @author 张江立
