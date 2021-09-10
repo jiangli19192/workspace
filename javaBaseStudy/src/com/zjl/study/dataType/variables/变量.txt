@@ -1,1 +1,3 @@
 BooleanTest: 测试Boolean类型
+
+StringConvertToDouble:字符串转成Double类型的数据
