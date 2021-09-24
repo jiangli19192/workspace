@@ -1,4 +1,4 @@
-package com.zjl.java8.study.funcitonalInterface;
+package com.zjl.java8.study.funcitonalInterface.simple;
 /**
  * 函数式接口定义注意事项:
  * 1.有且仅有一个抽象方法，但是可以有多个非抽象方法的接口。
