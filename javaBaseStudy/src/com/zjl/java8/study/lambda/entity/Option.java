@@ -1,4 +1,4 @@
-package com.zjl.java8.study.entity;
+package com.zjl.java8.study.lambda.entity;
 
 public class Option {
 	private boolean showPrice = true;
